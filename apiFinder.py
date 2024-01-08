@@ -32,7 +32,7 @@ class APIFinder:
 		if self.url:
 			os.makedirs(self.harDirectory,exist_ok=True)
 			self.deleteExistingHars()
-			self.browser = Browser("chromedriver/chromedriver", "browsermob-proxy-2.1.4/bin/browsermob-proxy", self.harDirectory, cookies=self.cookies)
+			self.browser = Browser("chromedriver/chromedriver", r"C:\Users\Mido Hany\VS code Projects\Python\apiscraper\browsermob-proxy-2.1.4\bin\browsermob-proxy", self.harDirectory, cookies=self.cookies)
 			if self.searchString is not None:
 				print("Searching URL "+self.url+" for string "+self.searchString)
 			#Move recursively through the site

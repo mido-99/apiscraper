@@ -19,7 +19,7 @@ class Browser:
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument("--proxy-server={0}".format(url))
         
-        self.driver = webdriver.Chrome(chromedriverPath,chrome_options =chrome_options)
+        self.driver = webdriver.Chrome(options=chrome_options)
         if cookies:
             print("Loading cookies from "+str(cookies))
             with open(cookies, 'r') as cookieFile:
